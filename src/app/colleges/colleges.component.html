@@ -1,0 +1,21 @@
+<h2>Collèges</h2>
+<table>
+  <tr>
+    <th>Immatriculation</th>
+    <th>Timestamp</th>
+    <th>Nom</th>
+    <th>Adresse</th>
+    <th>Code postal</th>
+    <th>Commune</th>
+    <th>Canton</th>
+  </tr>
+  <tr *ngFor="let college of colleges">
+    <td>{{college.numeroImmat}}</td>
+    <td>{{college.timestamp}}</td>
+    <td>{{college.nom}}</td>
+    <td>{{college.nomVoie}}</td>
+    <td>{{college.codePostal}}</td>
+    <td>{{college.commune}}</td>
+    <td>{{college.nouveauCanton}}</td>
+  </tr>
+</table>
